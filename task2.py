@@ -1,8 +1,8 @@
 secs = int(input('Введите количество секунд, и я выведу время в формате чч:мм:сс: '))
 
-hours = int(secs/3600)
+hours = int(secs / 3600)
 secs = secs - hours * 3600
-minutes = int(secs/60)
+minutes = int(secs / 60)
 secs = secs - minutes * 60
 if hours / 10 < 1:
     hours = '0' + str(hours)
