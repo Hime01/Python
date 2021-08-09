@@ -1,7 +1,7 @@
 def division(divided, divider):
     """Возвращает частное от деления первого аргумента на второй
 
-    Именованные аргументы:
+    Позиционные аргументы:
     :param divided: делимое
     :param divider: делитель
     :return: <class 'dict'> {'ans': <class 'str'>, 'errorMes': <class 'str'>}
