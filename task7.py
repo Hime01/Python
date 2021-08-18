@@ -27,4 +27,4 @@ final_list = [firm_profit_dict, {'average_profit': average_profit}]
 print(final_list)
 
 with open('task7.json', 'w', encoding='utf-8') as file:
-    json.dump(final_list, file)
+    json.dump(final_list, file, indent=4, ensure_ascii=False)
