@@ -9,7 +9,7 @@ class TrafficLight:
 
     def running(self):
         count = 0
-        for col in cycle(TrafficLight.__color):
+        for col in cycle(self.__color):
             if count > 20:
                 break
             print(f'{colored(col["text"], col["color"])}')
