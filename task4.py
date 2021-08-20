@@ -1,5 +1,5 @@
 class Car:
-    def __init__(self, speed, color, name, police = False):
+    def __init__(self, speed, color, name, police=False):
         self.speed = speed
         self.color = color
         self.name = name
@@ -24,16 +24,19 @@ class TownCar(Car):
         res = f'Превышение скорости! Машина едет {self.speed} км/ч.' if self.speed > 60 else super().show_speed()
         return res
 
+
 class SportCar(Car):
     pass
+
 
 class WorkCar(Car):
     def show_speed(self):
         res = f'Превышение скорости! Машина едет {self.speed} км/ч.' if self.speed > 40 else super().show_speed()
         return res
 
+
 class PoliceCar(Car):
-    def __init__(self, speed, color, name, police = True):
+    def __init__(self, speed, color, name, police=True):
         super().__init__(speed, color, name, police)
 
 
